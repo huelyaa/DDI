@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   	  xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/scrollView1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".DisplayDDI" >
+
+
+       <LinearLayout
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:orientation="vertical" >
+     
+    <TextView
+      android:id="@+id/textView1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/name"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+           
+   <EditText
+      android:id="@+id/editTextDDIName"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="text|textMultiLine"
+      android:imeOptions="actionSend|flagNoEnterAction"  >
+   </EditText>
+
+
+   <TextView
+      android:id="@+id/textView2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/info"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   
+      <EditText
+          android:id="@+id/editTextInfo"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="text"
+          android:clickable="false" 
+       	  android:cursorVisible="false" 
+      	  android:focusable="false" 
+       	  android:focusableInTouchMode="false"     />
+      
+  <TextView
+      android:id="@+id/objectClass"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/objectClass"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+          android:id="@+id/editTextObjectClass"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="text" />
+ 
+  <TextView
+      android:id="@+id/percipitantClass"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/percipitantClass"
+      android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+          android:id="@+id/editTextPercipitantClass"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="text" />
+                
+        <TextView
+	      android:id="@+id/objectItem"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/objectItem"
+	      android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+
+         <EditText
+          android:id="@+id/editTextObjectItem"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+     	  android:ems="10"
+          android:inputType="text|textMultiLine"
+		  android:imeOptions="actionSend|flagNoEnterAction" />
+       <TextView
+	      android:id="@+id/percipitantItem"
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:text="@string/percipitantItem"
+	      android:textAppearance="?android:attr/textAppearanceMedium" />            
+      
+         
+       <EditText
+          android:id="@+id/editTextPercipitantItem"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="text|textMultiLine"
+		  android:imeOptions="actionSend|flagNoEnterAction" />
+    
+       
+          <Button
+          android:id="@+id/button2"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:onClick="run"
+          android:text="@string/save" />
+
+       </LinearLayout>
+
+</ScrollView>

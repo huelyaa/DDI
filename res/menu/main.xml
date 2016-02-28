@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.view.MainActivity" >
+
+   <item android:id="@+id/item1" 
+      android:icon="@drawable/ic_action_new"
+      android:title="@string/Add_New" 
+      android:showAsAction="ifRoom|withText"
+	  android:actionViewClass="android.widget.SearchView">
+   </item>
+
+</menu>
